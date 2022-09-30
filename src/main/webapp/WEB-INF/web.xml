@@ -4,22 +4,4 @@
 
 <web-app>
     <display-name>Mesropian java pro homework19 </display-name>
-
-    <servlet>
-        <servlet-name>FirstTaskServlet</servlet-name>
-        <servlet-class>FirstTaskServlet</servlet-class>
-
-    </servlet>
-    <servlet>
-        <servlet-name>SecondTaskServlet</servlet-name>
-        <servlet-class>SecondTaskServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>FirstTaskServlet</servlet-name>
-        <url-pattern>/first-task-servlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SecondTaskServlet</servlet-name>
-        <url-pattern>/second-task-servlet</url-pattern>
-    </servlet-mapping>
 </web-app>

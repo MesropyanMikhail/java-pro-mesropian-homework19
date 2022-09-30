@@ -17,7 +17,8 @@ public class RegHexUtils {
 
     public Long countWordRepeat(String word) {
         Pattern pattern = Pattern.compile("\\b" + word + "\\b");
-        String text = FileReader.loadFile(System.getProperty("user.dir") + "\\resources\\textfile.txt");
+        FileReader fileReader = new FileReader();
+        String text = fileReader.loadFile();
         Matcher matcher = pattern.matcher(text);
         return matcher.results().count();
     }

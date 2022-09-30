@@ -1,4 +1,5 @@
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -7,7 +8,8 @@ import utils.RegHexUtils;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class SecondTaskServlet extends HttpServlet {
+@WebServlet("/count-word-repeat")
+public class CountWordRepeat extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
